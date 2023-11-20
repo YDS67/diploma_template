@@ -36,8 +36,12 @@
 
 \renewbibmacro{in:}{\space}
 
-\DeclareFieldFormat[article]{volume}{{T.}\space#1}
-\DeclareFieldFormat[article]{number}{{B.}\space#1\addcomma}
+\DeclareFieldFormat[article]{volume}{{том}\space#1}
+\DeclareFieldFormat[article]{number}{{номер}\space#1\addcomma}
+
+\DefineBibliographyStrings{russian}{%
+    phdthesis = {диссертация}%
+}
 
 \renewcommand{\rmdefault}{Tempora-TLF}
 
