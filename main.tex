@@ -9,9 +9,9 @@
 % Подключаем главный пакет со всем необходимым
 \usepackage{diploma}
 
+\addbibresource{literature.bib} %Import the bibliography file
+
 % Пакеты по желанию (самые распространенные)
-% Хитрые мат. символы
-\usepackage{euscript}
 % Таблицы
 \usepackage{longtable}
 \usepackage{makecell}
@@ -71,6 +71,9 @@
 
 Если вы будете пользоваться какими-то терминами и понятиями, которые требуют разъяснения, их нужно объяснить в следующих двух главах, а отсюда можно сослаться на эти определения.
 
+Ссылка на книгу: \cite{datta1}.
+Ссылка на книгу на русском: \cite{fedotkin1}.
+
 \begin{figure}[ht]
     \begin{center}
     \scalebox{0.4}{
@@ -78,7 +81,7 @@
     }
     
     \caption{\label{fig:miller2-2}
-        Схема измерений спектров поглощения в поперечном поле из работы \cite{Miller2}.}
+        Схема измерений спектров поглощения в поперечном поле из работы \cite{miller1}.}
     \end {center}
     \end {figure}
     
@@ -86,7 +89,11 @@
 
     Ссылаемся на рисунок \ref{fig:miller2-2}.
     
-    Ссылка на статью: \cite{Miller2}, \cite{Mohseni}
+    Ссылки на статьи: \cite{miller1}, \cite{miller2}, \cite{mohseni1}.
+
+    Ссылка на российскую статью: \cite{skubachevskii1}.
+
+    Ссылка на диссертацию:  \cite{pavlichenko1}
 
 \subsection{Раздел 2}
 
@@ -107,7 +114,7 @@
         \cos(\theta)\sin(\psi) & \cos(\psi)  & 0 \\
         -\sin(\theta)         & 0         &  1
     \end{pmatrix}^{-1}
-    \begin{pmatrix} \omega_x\\ \omega_y \\ \omega_z \end{pmatrix}.
+    \begin{pmatrix} \omega_x\\ \omega_y \\ \omega_z \end{pmatrix}. \nonumber
 \end{equation}
 
 \subsection{Раздел 2}
@@ -304,54 +311,29 @@
 % ============================================
 \pagebreak
 \specialsection{Выводы}
-Жизнь --- тлен.
+Структура файлов, которые можно редактировать:
+
+\begin{itemize}
+    \item \verb|main.tex| --- содержит основной текст;
+    \item \verb|titlepage.tex| --- содержит титульный лист;
+    \item \verb|literature.bib| --- содержит источники для списка литературы;
+\end{itemize}
+
+Файл \verb|diploma.sty| очень важный, его трогать и особенно удалять не надо, там задаются различные стили документа.
 
 \specialsection{Заключение}
 Нужны ли отдельно и выводы, и заключение --- я не знаю. Разберёмся.
 
-Список литературы ниже оформлен не по ГОСТу, но это легко исправить. Главное, что он организован, и можно ссылаться на каждый пункт по фамилии первого автора. Так же надо сделать и вам.
+Список литературы ниже оформлен не по ГОСТу, но это легко исправить. Главное, что он организован, и можно ссылаться на каждый пункт по фамилии первого автора.
 
-\begin{thebibliography}{99}
+\textbf{Внимание!} 
 
-    \bibitem{Miller0} D.A.B. Miller, D. S. Chemla, T. C. Damen et al., Band-Edge Electroabsorption in Quantum Well Structures: The Quantum-Confined Stark Effect, Phys. Rev. Lett., 53 (1984), 2173. \url{https://doi.org/10.1103/PhysRevLett.53.2173}
+Список литературы находится в отдельном файле \verb|literature.bib|, в который можно добавлять новые источники в любом порядке. Они будут сами располагаться как нужно, в порядке упоминания в тексте.
 
-    \bibitem{Miller1} D.A.B. Miller, D.S. Chemla, T.C. Damen et al., Electric Field Dependence of Optical Absorption near the Band Gap of Quantum-Well Structures, Phys. Rev. B, 32, 2 (1985), 1043–60. \url{https://doi.org/10.1103/PhysRevB.32.1043}
-    
-    \bibitem{Miller2} D. Miller, J. Weiner, D. Chemla et al., Electric-field dependence of linear optical properties in quantum well structures: Waveguide electroabsorption and sum rules, IEEE J. Quantum Electronics, 22, 9 (1986), 1816-1830. \url{https://doi.org/10.1109/JQE.1986.1073167}
-    
-    \bibitem{Klipstein} P.C. Klipstein and N. Apsley, A theory for the electroreflectance spectra of quantum well structures. J. Phys. C: Solid State Phys., 19 (1986), 6461. \url{https://doi.org/10.1088/0022-3719/19/32/020}
-    
-    \bibitem{Kan} Kan, Y., H. Nagai, M. Yamanishi et al., Field Effects on the Refractive Index and Absorption Coefficient in AlGaAs Quantum Well Structures and Their Feasibility for Electrooptic Device Applications, IEEE J. Quant. Electronics, 23, 12 (1987), 2167–80. \url{https://doi.org/10.1109/JQE.1987.1073288}
-    
-    \bibitem{Weiner} J.S. Weiner, D.A.B. Miller and D.S. Chemla, Quadratic electro-optic effect due to the quantum-confined Stark effect in quantum wells, Appl. Phys. Lett., 50 (1987), 842-844. \url{https://doi.org/10.1063/1.98008}
-    
-    \bibitem{Mohseni} H. Mohseni, H. An, Z. A. Shellenbarger, M. H. Kwakernaak, and J. H. Abeles, Enhanced Electro-Optic Effect in GaInAsP-InP Three-Step Quantum Wells, Appl. Phys. Lett., 84, 11 (2004), 1823–25. \url{https://doi.org/10.1063/1.1682699}
-    
-    \bibitem{Arakawa} T. Arakawa, T. Toya, M. Ushigome et al., InGaAs/InAlAs five-layer asymmetric coupled quantum well exhibiting giant electrorefractive index change, Jap. J. Appl. Phys., 50 (2011), 032204. \url{https://doi.org/10.1143/JJAP.50.032204}
-    
-    \bibitem{Dave} D.P. Dave, Enhanced Refractive Index Change in Asymmetrical Quantum Wells with an Applied Electric Field, J. Appl. Phys., 74, 11 (1993), 6872–75. \url{https://doi.org/10.1063/1.355089}
-    
-    \bibitem{Feng} H. Feng, J.P. Pang, M. Sugiyama et al., Field-Induced Optical Effect in a Five-Step Asymmetric Coupled Quantum Well with Modified Potential, IEEE J. Quant. Electronics, 34, 7, (1998), 1197-1208. \url{https://doi.org/10.1109/3.687863}
-    
-    \bibitem{Chuang2} S.L. Chuang, S. Schmitt-Rink, D.A. Miller, and D.S. Chemla, Exciton Green s-function approach to optical absorption in a quantum well with an applied electric field, Phys. Rev. B, 43, 2 (1991), 1500-1509. \url{https://doi.org/10.1103/PhysRevB.43.1500}
-    
-    \bibitem{Glutsch1} S. Glutsch, D.S. Chemla, and F. Bechstedt., Numerical Calculation of the Optical Absorption in Semiconductor Quantum Structures. Phys. Rev. B, 54, 16 (1996), 11592. \url{https://doi.org/10.1103/PhysRevB.54.11592}
-    
-    \bibitem{Ahland} A. Ahland, D. Schulz, E. Voges et al., Efficient Modeling of the Optical Properties of MQW Modulators on InGaAsP with Absorption Edge Merging, IEEE J. Quant. Electronics, 34, 9 (1998), 1597–1603. \url{https://doi.org/10.1109/3.709576}
-    
-    \bibitem{Hader} J. Hader, J.V. Moloney, and S.W. Koch, Microscopic Theory of Gain, Absorption, and Refractive Index in Semiconductor Laser Materials—Influence of Conduction-Band Nonparabolicity and Coulomb-Induced Intersubband Coupling, IEEE J. Quant. Electronics, 35, 12 (1999), 1878-1886. \url{https://doi.org/10.1109/3.806602}
-    
-    \bibitem{Maslov} A.V. Maslov and D.S. Citrin., Numerical Calculation of the Terahertz Field-Induced Changes in the Optical Absorption in Quantum Wells, IEEE J. Sel. Topics Quant. Electronics, 8, 3 (2002), 457-463. \url{https://doi.org/10.1109/JSTQE.2002.1016348}
-    
-    \bibitem{Sivalertporn} K. Sivalertporn, L. Mouchliadis, A. L. Ivanov et al., Direct and indirect excitons in semiconductor coupled quantum wells in an applied electric field, Phys. Rev. B, 85 (2012), 045207. \url{https://doi.org/10.1103/PhysRevB.85.045207}
-    
-    \bibitem{Zolotarev} V.V. Zolotarev, I.S. Shashkin, V.S. Golovin et al., Enhancement of the refractive index modulation in a modulator based on GaAs/AlGaAs quantum wells, Semicond. Sci. Technol., 34 (2019), 095005. \url{https://doi.org/10.1088/1361-6641/ab3131}
-    
-    \bibitem{Duque-Gomez} F. Duque-Gomez and J.E. Sipe, The Franz–Keldysh Effect Revisited: Electroabsorption Including Interband Coupling and Excitonic Effects, J. Phys. Chem. Solids, 76 (2015), 138–52. \url{https://doi.org/10.1016/j.jpcs.2014.07.023}
-    
-    \bibitem{YueHu} Yue Hu, Curtis R. Menyuk, Meredith N. Hutchinson et al. Impact of the Coulomb interaction on the Franz–Keldysh effect in high-current photodetectors. Opt. Lett., 41, 3 (2016), 456-459. \url{https://doi.org/10.1364/OL.41.000456}
-    
-    \bibitem{Schmitt} S. Schmitt-Rink, D.S. Chemla, W.H. Knox, and D.A.B. Miller. How fast is excitonic electroabsorption? Opt. Lett., 15, 1 (1990), 60-62. \url{https://doi.org/10.1364/OL.15.000060}
+Если какой-то источник не процитирован в тексте, он в список литературы добавлен не будет.
 
-\end{thebibliography}
+Поэтому один и тот же файл с источниками можно использовать для нескольких документов.
+
+\printbibliography
+
 \end{document}

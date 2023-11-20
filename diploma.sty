@@ -4,7 +4,41 @@
 % Язык, кодировка, шрифт
 \usepackage[utf8]{inputenc}
 \usepackage[T2A]{fontenc}
+
 \usepackage[english,russian]{babel}
+\usepackage{csquotes}
+
+%Библиография
+\usepackage[
+    backend=biber,
+    %citestyle = alphabetic, 
+    %bibstyle = ieee-alphabetic,  
+    %sortlocale=en_US,
+    sorting=none,
+    backref=true,
+    hyperref=true,
+    style=numeric,%style=alphabetic,
+    defernumbers=true,
+    isbn=false,
+    autolang=none,
+    %eid=true,
+    doi=false,
+    %series=true,
+    eprint=false,
+    bibencoding = utf8
+]{biblatex} %Imports biblatex package
+
+\renewbibmacro{volume+number+eid}{%
+    \printfield{volume}%
+    \setunit{\addcomma\space}%
+    \printfield{number}%
+    \printfield{eid}}
+
+\renewbibmacro{in:}{\space}
+
+\DeclareFieldFormat[article]{volume}{{T.}\space#1}
+\DeclareFieldFormat[article]{number}{{B.}\space#1\addcomma}
+
 \renewcommand{\rmdefault}{Tempora-TLF}
 
 % Межстрочный интервал = 1.5pt
@@ -75,27 +109,3 @@
 \newcommand{\MList}[1]{\par\begin{itemize}#1\end{itemize}}
 \newcommand{\NList}[1]{\par\begin{enumerate}#1\end{enumerate}}
 
-% Нумерация только тех формул, на которые в тексте присутствует ссылка
-\usepackage{autonum}
-
-% Список литературы
-\renewenvironment{thebibliography}[1]
-    {\bigskip
-    {\centering\large\bf Список литературы\par}%
-    \addcontentsline{toc}{section}{Список литературы}
-    \smallskip
-    \list{\@biblabel{\@arabic\c@enumiv}}%
-        {\settowidth\labelwidth{\@biblabel{#1}}%
-        \leftmargin\labelwidth
-        \advance\leftmargin\labelsep
-        \@openbib@code
-        \usecounter{enumiv}%
-        \let\p@enumiv\@empty
-        \renewcommand\theenumiv{\@arabic\c@enumiv}}%
-    \sloppy
-    \clubpenalty4000
-    \@clubpenalty \clubpenalty
-    \widowpenalty4000%
-    \sfcode`\.\@m}
-    {\def\@noitemerr{\@latex@warning{Empty `thebibliography' environment}}%
-    \endlist}
