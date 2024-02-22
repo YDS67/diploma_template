@@ -51,7 +51,9 @@
 
 \textbf{Задачи}
 \begin{enumerate}
-    \item Задача 1
+    \item {
+        Задача 1: Описание задачи Описание задачи Описание задачи Описание задачи Описание задачи Описание задачи
+        }
     \item Задача 2
     \item Задача 3
     \item Задача 4
@@ -105,7 +107,7 @@
 
 \subsection{Раздел 1}
 
-Ненумерованная формула:
+Ненумерованная формула \ref{eq:potential}:
 
 \begin{equation}
     \begin{pmatrix} \dot{\varphi}\\ \dot{\theta} \\ \dot{\psi} \end{pmatrix}
@@ -115,6 +117,11 @@
         -\sin(\theta)         & 0         &  1
     \end{pmatrix}^{-1}
     \begin{pmatrix} \omega_x\\ \omega_y \\ \omega_z \end{pmatrix}. \nonumber
+\end{equation}
+
+\begin{equation}
+    \label{eq:potential}
+    \Phi_{np}=E_{g}-kT\left[\ln\left(\frac{N_{c}}{N_{d}}\right)+\ln\left(\frac{N_{v}}{N_{a}}\right)\right]
 \end{equation}
 
 
@@ -282,7 +289,7 @@
 \end{center}
 
 
-А также тестируется счетчик таблиц, жирные и двойные линии.
+А также \textit{тестируется} счетчик таблиц, жирные и двойные линии.
 
 \begin{center}
     \begin{longtable}{|p{2cm}||p{3cm}|p{7cm}|p{3cm}|}
@@ -313,6 +320,31 @@
     \end{longtable}
 \end{center}
 
+
+\begin{tabular}{|c|c|c|}
+    \hline 
+    parameter & Si & GaAs\tabularnewline
+    \hline 
+    \hline 
+    $m_{e}$ & 0.98mo & 0.063mo\tabularnewline
+    \hline 
+    $m_{hh}$ & 0.49mo & 0.51mo\tabularnewline
+    \hline 
+    $m_{lh}$ & 0.16mo & 0.082mo\tabularnewline
+    \hline 
+    $\chi$ & 4.05 eV & 4.07 eV\tabularnewline
+    \hline 
+    $\varepsilon$ & 11.7 & 12.9\tabularnewline
+    \hline 
+    $E_{g}$ & 1.12 eV & 1.424 eV\tabularnewline
+    \hline 
+    $\mu_{n}$ & $1400cm^{2}V^{-1}s^{-1}$ & $8500cm^{2}V^{-1}s^{-1}$\tabularnewline
+    \hline 
+    $\mu_{p}$ & $450cm^{2}V^{-1}s^{-1}$ & $400cm^{2}V^{-1}s^{-1}$\tabularnewline
+    \hline 
+\end{tabular}
+
+\pagebreak
 Ссылаемся на Листинг \ref{listing-1} здесь.
 
 % ============================================
