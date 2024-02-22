@@ -52,8 +52,8 @@
 \textbf{Задачи}
 \begin{enumerate}
     \item {
-        Задача 1: Описание задачи Описание задачи Описание задачи Описание задачи Описание задачи Описание задачи
-        }
+          Задача 1: Описание задачи Описание задачи Описание задачи Описание задачи Описание задачи Описание задачи
+          }
     \item Задача 2
     \item Задача 3
     \item Задача 4
@@ -77,25 +77,23 @@
 Ссылка на книгу на русском: \cite{fedotkin1}.
 
 \begin{figure}[ht]
-    \begin{center}
-    \scalebox{0.4}{
-       \includegraphics{images/Miller2-Figure2.png}
-    }
-    
-    \caption{\label{fig:miller2-2}
-        Схема измерений спектров поглощения в поперечном поле из работы \cite{miller1}.}
-    \end {center}
-    \end {figure}
-    
-    Если рисунок взят из какой-то статьи, книги или из интернета (из интернета нежелательно), то нужно обязательно в подписи сделать ссылку на соответствующий пункт в списке литературы.
+\begin{center}
+\includegraphics[width=10cm]{images/Miller2-Figure2.png}
 
-    Ссылаемся на рисунок \ref{fig:miller2-2}.
-    
-    Ссылки на статьи: \cite{miller1}, \cite{miller2}, \cite{mohseni1}.
+\caption{\label{fig:miller2-2}
+    Схема измерений спектров поглощения в поперечном поле из работы \cite{miller1}.}
+\end {center}
+\end {figure}
 
-    Ссылка на российскую статью: \cite{skubachevskii1}.
+Если рисунок взят из какой-то статьи, книги или из интернета (из интернета нежелательно), то нужно обязательно в подписи сделать ссылку на соответствующий пункт в списке литературы.
 
-    Ссылка на диссертацию:  \cite{pavlichenko1}
+Ссылаемся на рисунок \ref{fig:miller2-2}.
+
+Ссылки на статьи: \cite{miller1}, \cite{miller2}, \cite{mohseni1}.
+
+Ссылка на российскую статью: \cite{skubachevskii1}.
+
+Ссылка на диссертацию:  \cite{pavlichenko1}
 
 \subsection{Раздел 2}
 
@@ -114,7 +112,7 @@
     = \begin{pmatrix}
         \cos(\theta)\cos(\psi) & -\sin(\psi) & 0 \\
         \cos(\theta)\sin(\psi) & \cos(\psi)  & 0 \\
-        -\sin(\theta)         & 0         &  1
+        -\sin(\theta)          & 0           & 1
     \end{pmatrix}^{-1}
     \begin{pmatrix} \omega_x\\ \omega_y \\ \omega_z \end{pmatrix}. \nonumber
 \end{equation}
@@ -130,7 +128,7 @@
 Нумерованные формулы:
 
 \begin{equation}
-\label{eq:1}
+    \label{eq:1}
     \dot{\theta}=\frac{P-p_{1}\cos\left(\varphi_{1}-\theta\right)-p_{2}\cos\left(\varphi_{2}-\theta\right)}{\mu+\sin^{2}\left(\varphi_{1}-\theta\right)+\sin^{2}\left(\varphi_{2}-\theta\right)}
 \end{equation}
 
@@ -181,8 +179,8 @@
         vars_new
     }
     \end{lstlisting}
-    
-    \begin{lstlisting}[language=C++,caption={Подпрограмма случайного блуждания на плоскости},label={listing-2}]
+
+\begin{lstlisting}[language=C++,caption={Подпрограмма случайного блуждания на плоскости},label={listing-2}]
     std::random_device rd;
     std::mt19937 mt(rd());
     std::uniform_int_distribution<long> dist(1, 4);
@@ -221,70 +219,68 @@
 
 \begin{center}
     \begin{longtable}{|p{2cm}|p{3cm}|p{7cm}|p{3cm}|}
-    \caption{Заголовок таблицы}\\
-    \hline
-    1 & 2 & 3 & 4\\ 
-    \hline 
-    2 & 2 & 3 & 4\\
-    \hline
-    3 & 2 & 3 & 4\\
-    \hline
-    4 & 2 & 3 & 4\\
-    \hline
-    5 & 2 & 3 & 4\\
-    \hline
-    6 & 2 & 3 & 4\\
-    \hline
-    7 & 2 & 3 & 4\\
-    \hline
-    8 & 2 & 3 & 4\\
-    \hline
-    9 & 2 & 3 & 4\\
-    \hline
-    10 & 2 & 3 & 4\\
-    \hline
-    1 & 2 & 3 & 4\\ 
-    \hline 
-    2 & 2 & 3 & 4\\
-    \hline
-    3 & 2 & 3 & 4\\
-    \hline
-    4 & 2 & 3 & 4\\
-    \hline
-    5 & 2 & 3 & 4\\
-    \hline
-    6 & 2 & 3 & 4\\
-    \hline
-    7 & 2 & 3 & 4\\
-    \hline
-    8 & 2 & 3 & 4\\
-    \hline
-    9 & 2 & 3 & 4\\
-    \hline
-    10 & 2 & 3 & 4\\
-    \hline
-    1 & 2 & 3 & 4\\ 
-    \hline 
-    2 & 2 & 3 & 4\\
-    \hline
-    3 & 2 & 3 & 4\\
-    \hline
-    4 & 2 & 3 & 4\\
-    \hline
-    5 & 2 & 3 & 4\\
-    \hline
-    6 & 2 & 3 & 4\\
-    \hline
-    7 & 2 & 3 & 4\\
-    \hline
-    8 & 2 & 3 & 4\\
-    \hline
-    9 & 2 & 3 & 4\\
-    \hline
-    10 & 2 & 3 & 4\\
-    \hline
-    
-    
+        \caption{Заголовок таблицы} \\
+        \hline
+        1  & 2 & 3 & 4              \\
+        \hline
+        2  & 2 & 3 & 4              \\
+        \hline
+        3  & 2 & 3 & 4              \\
+        \hline
+        4  & 2 & 3 & 4              \\
+        \hline
+        5  & 2 & 3 & 4              \\
+        \hline
+        6  & 2 & 3 & 4              \\
+        \hline
+        7  & 2 & 3 & 4              \\
+        \hline
+        8  & 2 & 3 & 4              \\
+        \hline
+        9  & 2 & 3 & 4              \\
+        \hline
+        10 & 2 & 3 & 4              \\
+        \hline
+        1  & 2 & 3 & 4              \\
+        \hline
+        2  & 2 & 3 & 4              \\
+        \hline
+        3  & 2 & 3 & 4              \\
+        \hline
+        4  & 2 & 3 & 4              \\
+        \hline
+        5  & 2 & 3 & 4              \\
+        \hline
+        6  & 2 & 3 & 4              \\
+        \hline
+        7  & 2 & 3 & 4              \\
+        \hline
+        8  & 2 & 3 & 4              \\
+        \hline
+        9  & 2 & 3 & 4              \\
+        \hline
+        10 & 2 & 3 & 4              \\
+        \hline
+        1  & 2 & 3 & 4              \\
+        \hline
+        2  & 2 & 3 & 4              \\
+        \hline
+        3  & 2 & 3 & 4              \\
+        \hline
+        4  & 2 & 3 & 4              \\
+        \hline
+        5  & 2 & 3 & 4              \\
+        \hline
+        6  & 2 & 3 & 4              \\
+        \hline
+        7  & 2 & 3 & 4              \\
+        \hline
+        8  & 2 & 3 & 4              \\
+        \hline
+        9  & 2 & 3 & 4              \\
+        \hline
+        10 & 2 & 3 & 4              \\
+        \hline
     \end{longtable}
 \end{center}
 
@@ -293,55 +289,53 @@
 
 \begin{center}
     \begin{longtable}{|p{2cm}||p{3cm}|p{7cm}|p{3cm}|}
-    \caption{Заголовок таблицы номер 2}\\
-    \hline
-    1 & 2 & 3 & 4\\ 
-    \hline
-    2 & 2 & 3 & 4\\
-    \hline
-    3 & 2 & очень жирная ячейка \par с переносом & 4\\
-    \hline
-    4 & 2 & 3 & 4\\
-    \hline
-    5 & 2 & 3 & 4\\
-    \hline
-    6 & 2 & 3 & 4\\
-    \hline
-    7 & 2 & 3 & 4\\
-    \hline
-    8 & 2 & 3 & 4\\
-    \hline
-    9 & 2 & 3 & 4\\
-    \hline
-    10 & 2 & 3 & 4\\
-    \hline
-    
-    
+        \caption{Заголовок таблицы номер 2}               \\
+        \hline
+        1  & 2 & 3                                    & 4 \\
+        \hline
+        2  & 2 & 3                                    & 4 \\
+        \hline
+        3  & 2 & очень жирная ячейка \par с переносом & 4 \\
+        \hline
+        4  & 2 & 3                                    & 4 \\
+        \hline
+        5  & 2 & 3                                    & 4 \\
+        \hline
+        6  & 2 & 3                                    & 4 \\
+        \hline
+        7  & 2 & 3                                    & 4 \\
+        \hline
+        8  & 2 & 3                                    & 4 \\
+        \hline
+        9  & 2 & 3                                    & 4 \\
+        \hline
+        10 & 2 & 3                                    & 4 \\
+        \hline
     \end{longtable}
 \end{center}
 
 
 \begin{tabular}{|c|c|c|}
-    \hline 
-    parameter & Si & GaAs\tabularnewline
-    \hline 
-    \hline 
-    $m_{e}$ & 0.98mo & 0.063mo\tabularnewline
-    \hline 
-    $m_{hh}$ & 0.49mo & 0.51mo\tabularnewline
-    \hline 
-    $m_{lh}$ & 0.16mo & 0.082mo\tabularnewline
-    \hline 
-    $\chi$ & 4.05 eV & 4.07 eV\tabularnewline
-    \hline 
-    $\varepsilon$ & 11.7 & 12.9\tabularnewline
-    \hline 
-    $E_{g}$ & 1.12 eV & 1.424 eV\tabularnewline
-    \hline 
-    $\mu_{n}$ & $1400cm^{2}V^{-1}s^{-1}$ & $8500cm^{2}V^{-1}s^{-1}$\tabularnewline
-    \hline 
-    $\mu_{p}$ & $450cm^{2}V^{-1}s^{-1}$ & $400cm^{2}V^{-1}s^{-1}$\tabularnewline
-    \hline 
+    \hline
+    parameter     & Si                       & GaAs\tabularnewline
+    \hline
+    \hline
+    $m_{e}$       & 0.98mo                   & 0.063mo\tabularnewline
+    \hline
+    $m_{hh}$      & 0.49mo                   & 0.51mo\tabularnewline
+    \hline
+    $m_{lh}$      & 0.16mo                   & 0.082mo\tabularnewline
+    \hline
+    $\chi$        & 4.05 eV                  & 4.07 eV\tabularnewline
+    \hline
+    $\varepsilon$ & 11.7                     & 12.9\tabularnewline
+    \hline
+    $E_{g}$       & 1.12 eV                  & 1.424 eV\tabularnewline
+    \hline
+    $\mu_{n}$     & $1400cm^{2}V^{-1}s^{-1}$ & $8500cm^{2}V^{-1}s^{-1}$\tabularnewline
+    \hline
+    $\mu_{p}$     & $450cm^{2}V^{-1}s^{-1}$  & $400cm^{2}V^{-1}s^{-1}$\tabularnewline
+    \hline
 \end{tabular}
 
 \pagebreak
@@ -368,7 +362,7 @@
 
 Список литературы ниже оформлен не по ГОСТу, но это легко исправить. Главное, что он организован, и можно ссылаться на каждый пункт по фамилии первого автора.
 
-\textbf{Внимание!} 
+\textbf{Внимание!}
 
 Список литературы находится в отдельном файле \verb|literature.bib|, в который можно добавлять новые источники в любом порядке. Они будут сами располагаться как нужно, в порядке упоминания в тексте.
 
