@@ -113,3 +113,12 @@
 \newcommand{\MList}[1]{\par\begin{itemize}#1\end{itemize}}
 \newcommand{\NList}[1]{\par\begin{enumerate}#1\end{enumerate}}
 
+\usepackage{tabularx}
+% \setlength{\extrarowheight}{0.3cm}
+\renewcommand{\arraystretch}{1.5}
+\renewcommand{\tabularxcolumn}[1]{>{\centering\arraybackslash\small}m{#1}}
+\newcolumntype{B}{>{\bfseries\small}c}
+\newcolumntype{R}{>{\small}c}
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
